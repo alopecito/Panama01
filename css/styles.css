@@ -1,0 +1,274 @@
+@charset "utf-8";
+* {
+    margin:0px;
+    padding:0px;	
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.banner {
+    clear:both;
+    position: relative;
+    top: 0;
+
+
+
+}
+.banner img {
+
+    width: 100%;
+
+
+}
+.maincontent {
+
+    float:left;
+    width: 100%;
+
+}
+
+/*This is the Headert Menus*/
+
+#header {
+    background-color: #fff;
+    height: 120px;
+    position: relative;
+    margin: 0px auto 0;
+}
+
+
+#header ul {
+    margin: 0 auto;
+    width: 900px;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+#header ul li {
+    float: left;
+    width: 120px;
+    padding: 0 15px 0 15px;
+
+}
+
+#header ul li:nth-of-type(3) {
+    margin-left: 165px;
+}
+
+#header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 45px 0 0 0;
+    height: 45px;
+}
+
+#header ul li a:hover {
+    border-bottom: 3px Solid #070652;
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+
+}
+
+.logo {
+
+    position: absolute;
+    left: 50%;
+    margin: 0px 0 0 -130px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+/*End of Menus*/
+
+.error {
+    color:#ff0000;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+#myVideo {
+
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -100;
+}
+
+
+
+
+
+/*THIS IS THE SECTIONS PART CSS*/
+
+
+.containerHome {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0px;
+    height: 100%;
+}
+
+
+.imageBox
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.imageBox img {
+    width: 100%;
+    transform: .5s;
+    
+    
+}
+.textBox {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,0,0,.09);
+    transition: .5s;
+    
+}
+
+.textBox h1 {
+    margin:  0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-family: arial;
+}
+
+.imageBox:hover .textBox {
+    left : 0%;
+}
+
+.imageBox:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 481px) {  
+    /*this @media is only for screen >481 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+
+
+
+
+
+}
+
+@media only screen and (max-width: 800px) {  
+    /*this @media is only for screen >769 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+
+
+
+
+
+    #header {
+
+        height: 135px;
+    }
+
+
+    #header ul {
+
+        width: 350px;
+
+
+    }
+
+    #header ul li {
+
+        width: 73px;
+        padding: 0 5px 0 5px;
+
+
+    }
+
+    #header ul li:nth-of-type(3) {
+        margin-left: 0;
+    }
+
+    #header ul li a {
+
+        font-size: 10px;
+        padding: 110px 0 0 0;
+        height: 15px;
+    }
+
+    #header ul li a:hover {
+        border-bottom: 2px Solid #070652;
+    }
+
+    .logo img{
+        width: 90px;
+        height: auto;
+
+    }
+
+    .logo {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+
+
+
+
+
+}
